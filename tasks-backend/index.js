@@ -1,7 +1,16 @@
 const express = require('express');
+//const session = require('express-session');
+
 const app = express();
 const db = require('./config/db');
 const consign = require('consign');
+
+//app.use(
+//  session({
+//    secret: 'authSecret',
+//    resave: false, 
+//    saveUninitialized: false 
+//  }));
 
 consign()
   .include('./config/passport.js')

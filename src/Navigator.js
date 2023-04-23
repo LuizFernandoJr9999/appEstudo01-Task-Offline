@@ -13,7 +13,6 @@ const mainRoutes = {
     screen: TaskList
   }
 }
- 
 const mainNavigator = createSwitchNavigator(mainRoutes, {
   initialRouteName: 'Auth'
   //initialRouteName: 'Home'
